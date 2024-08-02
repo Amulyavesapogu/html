@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll Margin Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .section-content {
+            height: 200px; 
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        .section {
+            scroll-margin-top: 60px; 
+            padding: 20px;
+            background-color: #4CAF50;
+            color: blue;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Scroll Margin Properties Example</h1>
+</header>
+
+<nav>
+    <a href="#section1">Go to Section 1</a>
+    <a href="#section2">Go to Section 2</a>
+    <a href="#section3">Go to Section 3</a>
+    <a href="#section4">Go to Section 4</a>
+</nav>
+
+<div class="container">
+    <section id="section1" class="section">
+        <div class="section-content">
+            <h2>Section 1</h2>
+            <p>Content for Section 1. Scroll margin ensures this section is appropriately positioned when navigated to.</p>
+        </div>
+    </section>
+
+    <section id="section2" class="section">
+        <div class="section-content">
+            <h2>Section 2</h2>
+            <p>Content for Section 2. Scroll margin provides consistent space above this section when scrolled into view.</p>
+        </div>
+    </section>
+
+    <section id="section3" class="section">
+        <div class="section-content">
+            <h2>Section 3</h2>
+            <p>Content for Section 3. The scroll margin ensures that this section is not obscured by fixed headers or other elements.</p>
+        </div>
+    </section>
+
+    <section id="section4" class="section">
+        <div class="section-content">
+            <h2>Section 4</h2>
+            <p>Content for Section 4. This section will have proper scroll margin when navigated to, ensuring it's fully visible.</p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
