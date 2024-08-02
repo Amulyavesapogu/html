@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto; /* Adds vertical scrollbar if needed */
+            height: 300px; /* Fixed height for demonstration */
+        }
+        .content {
+            height: 800px; /* Long content to create scrollbar */
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .scroll-horizontal {
+            width: 100%;
+            overflow-x: auto; /* Adds horizontal scrollbar if needed */
+            white-space: nowrap;
+            background-color: #ddd;
+            padding: 10px;
+        }
+        .scroll-horizontal div {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Scroll Properties Example</h1>
+</header>
+
+<div class="container">
+    <h2>Vertical Scrolling Container</h2>
+    <div class="content">
+        <p>This is a long content area with vertical scrolling enabled. The container has a fixed height of 300px and will show a scrollbar if the content exceeds this height.</p>
+        <p>Scroll down to see more content. This example helps to demonstrate vertical scrolling behavior.</p>
+    </div>
+</div>
+
+<div class="scroll-horizontal">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+    <div>Item 6</div>
+    <div>Item 7</div>
+    <div>Item 8</div>
+    <div>Item 9</div>
+    <div>Item 10</div>
+</div>
+
+<footer>
+    <p>© 2024 Scroll Properties Example</p>
+</footer>
+
+</body>
+</html>

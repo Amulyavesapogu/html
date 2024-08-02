@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overflow Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #4CAF50;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box {
+            height: 100px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #4CAF50;
+            background-color: #e0e0e0;
+            overflow: hidden; 
+        }
+        .box p {
+            margin: 0;
+        }
+        .scroll-box {
+            height: 150px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #4CAF50;
+            background-color: #d0f0c0;
+            overflow: auto; 
+        }
+        .scroll-box p {
+            margin: 0;
+        }
+        .visible-box {
+            height: 100px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #4CAF50;
+            background-color: #c0e0e0;
+            overflow: visible;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Overflow Properties Example</h1>
+</header>
+
+<div class="container">
+    <div class="box">
+        <h2>Hidden Overflow</h2>
+        <p>This box uses overflow: hidden;. Any content that exceeds the box's height will be clipped and hidden from view.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+    
+    <div class="scroll-box">
+        <h2>Scrollable Overflow</h2>
+        <p>This box uses overflow: auto;. Scrollbars will appear if the content overflows the box's height.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+    
+    <div class="visible-box">
+        <h2>Visible Overflow</h2>
+        <p>This box uses overflow: visible;. Content that exceeds the box's height will be visible outside the box.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Overflow Properties Example</p>
+</footer>
+
+</body>
+</html>

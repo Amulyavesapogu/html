@@ -1,0 +1,64 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Simple Image Gallery</h1>
+</header>
+
+<div class="gallery">
+   
+    <iframe src="https://th.bing.com/th/id/OIP.EGgECHsB-r9NkpnxyzhciQAAAA?rs=1&pid=ImgDetMain" alt="Image 1" frameborder="0"></iframe>
+    <iframe src="https://th.bing.com/th/id/OIP.DqxZw_1WZXavzC0rY7L2MgHaHa?rs=1&pid=ImgDetMain" alt="Image 2" frameborder="0"></iframe>
+    <iframe src="https://thumbs.dreamstime.com/b/single-orange-fruit-over-white-reflective-background-34900789.jpg" alt="Image 3" frameborder="0"></iframe>
+    <iframe src="https://th.bing.com/th/id/OIP.Hfepxocu-UIP4oRPLy2IPAAAAA?rs=1&pid=ImgDetMain" alt="Image 4" frameborder="0"></iframe>
+    <iframe src="https://th.bing.com/th/id/OIP.C8msvPuhMyAJZF5kwsctXwHaEl?rs=1&pid=ImgDetMain" alt="Image 5" frameborder="0"></iframe>
+    <iframe src="https://th.bing.com/th/id/OIP.kdyYExLHAEH1i46i0tgkDQAAAA?rs=1&pid=ImgDetMain" alt="Image 6" frameborder="0"></iframe>
+</div>
+
+<footer>
+    <p>© 2024 Simple Image Gallery</p>
+</footer>
+
+</body>
+</html>
